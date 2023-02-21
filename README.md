@@ -14,4 +14,3 @@
 - Configure database and mail in .env file
 - Run migrate with seeder `php artisan migrate:fresh --seed`
 - Project run `php artisan serve`
-- Project test `php artisan test`
