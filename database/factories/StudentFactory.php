@@ -23,7 +23,7 @@ class StudentFactory extends Factory
       return [
         'first_name' => $this->faker->firstName,
         'last_name' => $this->faker->lastName,
-        'student_id' => $this->faker->unique()->numberBetween(100000, 999999),
+        'student_id' => $this->faker->unique(true)->numberBetween(100000, 999999),
         'age' => $this->faker->numberBetween(18, 25),
         'department_id' => Department::inRandomOrder()->first()->id,
       ];
