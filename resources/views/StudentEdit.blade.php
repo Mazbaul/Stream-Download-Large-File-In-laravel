@@ -1,6 +1,6 @@
 @extends('layout')
 
-@section('title', 'Add Student')
+@section('title', 'Edit Student')
 
 @section('content')
 <div class="content">
@@ -8,7 +8,7 @@
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
             <div class="card">
-                <div class="card-header"><strong class="card-title">Add Student</strong></div>
+                <div class="card-header"><strong class="card-title">Edit Student</strong></div>
                 <div class="card-body">
                     <form class="form-horizontal" method="POST" action="{{ route('student-update',[$student->id]) }}">
                         {{ csrf_field() }}
