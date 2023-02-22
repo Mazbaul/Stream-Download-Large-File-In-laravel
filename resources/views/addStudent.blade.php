@@ -87,10 +87,3 @@
   </div>
 </div>
 @endsection
-@push('scripts')
-    <script>
-        $(document).ready(function() {
-            $('#subjects').select2();
-        });
-    </script>
-@endpush
